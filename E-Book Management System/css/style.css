@@ -1,0 +1,92 @@
+*{
+    margin: 50;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: brown;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  rgb(194, 68, 51);
+    color: #fff;
+}
+footer{
+    text-align: center;
+    background: #570505;
+    color: antiquewhite;
+}
+.logo{
+    display:flexbox;
+    align-items: center;
+    gap:10px;
+}
+.logo .c{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #00b1f7;
+    color:#08f700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:15px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(23, 23, 23);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.active,nav a:hover{
+    background: #fff;
+    color: #570505;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.hero img{
+    width:460px;
+    border-radius: 12px;
+}
+.btn{
+    background:#570505;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+features,.books{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap:50px;
+    padding: 30px;
+}
+.form{
+    background: #940707;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form button{
+    padding: 10px;
+    background:#b80101;
+    color:#ffffff;
+    border:none;
+}
