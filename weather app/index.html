@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Key</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body{
+            font-family:'Courier New', Courier, monospace;
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        input,button{
+            padding: 8px;
+            font-size: medium;
+            font-family:'Courier New', Courier, monospace;
+        }
+        #message{
+            color:blue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather forecast graph</h1>
+    <input type="text" id="cityInput" placeholder="enter city name">
+    <button id="getWeatherBtn">get weather</button>
+    <p id="message"></p>
+    <canvas id="weatherChart" width="600" height="300"></canvas>
+    <script src="app.js"></script>
+</body>
+</html>
